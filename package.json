@@ -1,0 +1,27 @@
+{
+  "name": "npm-show-versions",
+  "version": "1.0.0",
+  "description": "Show important package availability information",
+  "main": "index.js",
+  "dependencies": {
+    "request": "^2.45.0",
+    "semver": "^4.0.3"
+  },
+  "devDependencies": {},
+  "bin": {
+    "npm-show-versions": "cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rebecca Turner <me@re-becca.org>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iarna/npm-show-versions"
+  },
+  "bugs": {
+    "url": "https://github.com/iarna/npm-show-versions/issues"
+  },
+  "homepage": "https://github.com/iarna/npm-show-versions"
+}
