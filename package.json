@@ -1,6 +1,6 @@
 {
   "name": "npm-show-versions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Show important package availability information",
   "main": "index.js",
   "dependencies": {
