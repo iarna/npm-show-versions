@@ -1,7 +1,10 @@
 "use strict"
 var request = require("request")
 var semver = require("semver")
-var npmver = require("npm").version
+var child_process = require("child_process")
+
+var result = child_process.spawnSync("npm", ["--version"])
+var npmver = result.stdout.toString().replace(/\n*$/,'')
 
 module.exports = function (argv) {
   if (argv.length != 3) return help()
