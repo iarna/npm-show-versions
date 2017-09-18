@@ -1,5 +1,5 @@
 "use strict"
-var request = require("request")
+var fetch = require("node-fetch-npm")
 var semver = require("semver")
 var child_process = require("child_process")
 
@@ -12,9 +12,7 @@ module.exports = function (argv) {
   var pkgname = pkg[0]
   var pkgver  = pkg[1] || '*'
   
-  request('http://registry.npmjs.org/'+pkgname, function (er, response, body) {
-    if (er) return error(er)
-    try { var info = JSON.parse(body) } catch (E) { return error(E) }
+  fetch('http://registry.npmjs.org/'+pkgname).then(res => res.json()).then(info => {
     if (info.error) { return error(info) }
     console.log('Name: ' + info.name)
     console.log('Description: ' + info.description)
@@ -39,7 +37,7 @@ module.exports = function (argv) {
          distTags[ver] ? distTags[ver].map(function(V){ return "["+V+"]" }).join(", ") : "",
          engines.length ? "("+(pkg.engineStrict ? "requires" : "suggests")+": "+engines.join(", ")+")" : "")
     })
-  })
+  }).catch(err => error(err))
 }
 
 function help() {

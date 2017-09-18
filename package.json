@@ -4,7 +4,7 @@
   "description": "Show important package availability information",
   "main": "index.js",
   "dependencies": {
-    "request": "^2.45.0",
+    "node-fetch-npm": "^2.0.2",
     "semver": "^4.0.3"
   },
   "devDependencies": {},
