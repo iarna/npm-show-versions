@@ -1,0 +1,46 @@
+{
+  "name": "npm-show-versions",
+  "version": "1.0.2",
+  "lockfileVersion": 1,
+  "requires": true,
+  "dependencies": {
+    "encoding": {
+      "version": "0.1.12",
+      "resolved": "https://registry.npmjs.org/encoding/-/encoding-0.1.12.tgz",
+      "integrity": "sha1-U4tm8+5izRq1HsMjgp0flIDHS+s=",
+      "requires": {
+        "iconv-lite": "0.4.19"
+      }
+    },
+    "iconv-lite": {
+      "version": "0.4.19",
+      "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.19.tgz",
+      "integrity": "sha512-oTZqweIP51xaGPI4uPa56/Pri/480R+mo7SeU+YETByQNhDG55ycFyNLIgta9vXhILrxXDmF7ZGhqZIcuN0gJQ=="
+    },
+    "json-parse-better-errors": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/json-parse-better-errors/-/json-parse-better-errors-1.0.1.tgz",
+      "integrity": "sha512-xyQpxeWWMKyJps9CuGJYeng6ssI5bpqS9ltQpdVQ90t4ql6NdnxFKh95JcRt2cun/DjMVNrdjniLPuMA69xmCw=="
+    },
+    "node-fetch-npm": {
+      "version": "2.0.2",
+      "resolved": "https://registry.npmjs.org/node-fetch-npm/-/node-fetch-npm-2.0.2.tgz",
+      "integrity": "sha512-nJIxm1QmAj4v3nfCvEeCrYSoVwXyxLnaPBK5W1W5DGEJwjlKuC2VEUycGw5oxk+4zZahRrB84PUJJgEmhFTDFw==",
+      "requires": {
+        "encoding": "0.1.12",
+        "json-parse-better-errors": "1.0.1",
+        "safe-buffer": "5.1.1"
+      }
+    },
+    "safe-buffer": {
+      "version": "5.1.1",
+      "resolved": "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.1.tgz",
+      "integrity": "sha512-kKvNJn6Mm93gAczWVJg7wH+wGYWNrDHdWvpUmHyEsgCtIwwo3bqPtV4tR5tuPaUhTOo/kvhVwd8XwwOllGYkbg=="
+    },
+    "semver": {
+      "version": "4.0.3",
+      "resolved": "https://registry.npmjs.org/semver/-/semver-4.0.3.tgz",
+      "integrity": "sha1-95ybpnDvzMAp2YpQF972SwzhZE4="
+    }
+  }
+}
